@@ -17,7 +17,7 @@ jobs:
 
       - name: Extract app files
         run: |
-          unzip -o app.zip -d .
+          unzip -o "$GITHUB_WORKSPACE/app.zip" -d "$GITHUB_WORKSPACE"
           ls -la
           ls -la app
 
